@@ -6,6 +6,7 @@
     <title>Bootstrap demo</title>
     <link rel="stylesheet" href="/css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   
   <style>
@@ -13,9 +14,28 @@
     .mybg{
         background-color: #044556;
     }
+    .mybg-1{
+      background-color: rgb(29, 29, 29);
+    }
     .text-color {
       color: #aeb2b3;
     }
+    .fa-solid {
+    font-size: 48px; 
+    display: block; 
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+  .img-fluid {
+    max-width: 90%;
+  }
+  .pl-50 {
+    padding-left: 50px;
+  }
+  .mr-20 {
+    margin-right: 20px;
+  }
+ 
   </style>
 
 
@@ -27,7 +47,7 @@
         <div class="container">
           <a class="navbar-brand text-light" href="#">USTP CONeXT</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="menubar">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler"></span>
           </button>
           <div class="collapse navbar-collapse" id="menu">
             <ul class="navbar-nav ms-auto">
@@ -53,7 +73,7 @@
                 <div>
                      <h1>Get Connected to The Next Generation</h1>
                     <p class="lead my-4">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, sapiente! 
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit doloribus iusto commodi corrupti praesentium repellat eius, atque, quod nihil tempore inventore tempora error, assumenda numquam consectetur. Optio quae voluptates sunt! 
                     </p>
                     <button class="btn btn-light btn-lg fw-bold" data-bs-toggle="model" data-bs-target="#Connect">Connect With Us!</button>
                 </div>
@@ -65,34 +85,216 @@
       <!--SUBSCRIPTION-->
 
       <section class="bg-dark">
-        <div class="container text-center">
-          <div class="row align-items-center">
-            <div class="col p-3">
-              <p class="text-white fw-semibold mb-3 d-flex justify-content-center">Sign Up for Constant Notification</p>
+        <div class="container">
+          <div class="row pt-5 pb-5">
+            <div class="col-sm-6">
+              <h2 class="text-white fw-bold mb-3 d-flex justify-content-start">Sign Up for Constant Notification</h2>
             </div>
-          </div>
-            <div class="col p-3">
+            <div class="col-sm-6">
               <div class="input-group mb-3 mybg d-flex justify-content-center">
                 <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email" aria-describedby="button-addon2">
                 <button class="btn btn-outline-secondary bg-primary text-light" type="button" id="button-addon2">Subscribe</button>
               </div>
             </div>
+          </div>
         </div>
       </section>
       
       <!--VIRTUAL BOXES-->
 
-      <section class="bg-light">
-        
-       
-
+      <section>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="card text-center mb-3 mybg-1" style="height: 280px;">
+                <div class="card-body">
+                  <i class="fa-solid fa-laptop text-light"></i>
+                  <h5 class="card-title text-light">Virtual</h5>
+                  <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem repellendus unde veniam eius quia inventore amet dicta? Incidunt, cumque.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card text-center mb-3 bg-secondary" style="height: 280px;">
+                <div class="card-body">
+                  <i class="fa-solid fa-user text-light"></i>
+                  <h5 class="card-title text-light">Virtual</h5>
+                  <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem repellendus unde veniam eius quia inventore amet dicta? Incidunt, cumque.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4 mb-5">
+              <div class="card text-center mb-3 mybg-1" style="height: 280px;">
+                <div class="card-body">
+                  <i class="fa-solid fa-users text-light"></i>
+                  <h5 class="card-title text-light">Virtual</h5>
+                  <p class="card-text text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem repellendus unde veniam eius quia inventore amet dicta? Incidunt, cumque.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
+      <!--IMAGES-->
 
+      <section class="text-dark text-sm-start p-5">
+        <div class="container">
+          <div class="row bg-light pt-5 pb-5 pl-50">
+            <div class="col-sm-6">
+                   <h1 class="text-primary">Let's Turn Your <span class="text-warning"><strong>IDEAS</span></strong> Into a Solution</h1>
+                    <p class="lead my-4 text-primary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum accusamus tempore minus iure earum numquam commodi harum, qui obcaecati optio eligendi. Qui, laboriosam illum esse natus rerum accusantium tempora omnis?
+                    </p>
+                    <button class="btn btn-light btn-lg fw-bold" data-bs-toggle="model" data-bs-target="#Connect">Connect With Us!</button>
+             </div>
+               <div class="col-sm-6 d-flex justify-content-center align-items-center">
+                <img src="/images/idea.jpg" alt="" class="img-fluid">
+              </div>            
+           </div> 
+        </div>
 
-  
+        <div class="container">
+          <div class="row pt-5 pb-5 mt-5">
+            <div class="col-sm-6 d-flex justify-content-center align-items-center"> <!-- Updated class order -->
+              <img src="/images/success.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col-sm-6">
+              <h1 class="text-primary">Your <span class="text-warning"><strong>SUCCESS</span></strong> Is Our Focus</h1>
+              <p class="lead my-4 text-primary">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum accusamus tempore minus iure earum numquam commodi harum, qui obcaecati optio eligendi. Qui, laboriosam illum esse natus rerum accusantium tempora omnis?
+              </p>
+              <button class="btn btn-light btn-lg fw-bold" data-bs-toggle="model" data-bs-target="#Connect">Connect With Us!</button>
+            </div>
+          </div> 
+        </div>
+      </section>
+
+      <!--ACCORDION-->
+
+      <section>
+      <div class="container mb-5">
+        <div class="row">
+          <div class="col">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h1 class="text-center">FREQUENTLY ASKED QUESTIONS</h1>
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    What kind of IDEAS are you looking for?
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body"> Eric John R. Tan GWAPO</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Do you finance a Project?
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">No, pero gwapo ko.</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Can I earn money if I join?
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">Syempre, dili.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--ADMINISTRATORS-->
+    
+    <section class="bg-primary pt-5 pb-5">
+        <div class="container mt-5">
+          <div class="row pb-5">
+            <div class="col-sm-12 text-center text-light">
+              <h2>The Administrators</h2>
+              <p>Our administrators are experts in the field of business and technologies with 5 years of experience</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="card text-center mb-3 bg-light" style="height: 100%;">
+                <div class="card-body">
+                  <img src="/images/test.webp" class="w-50 rounded-circle" alt="">
+                  <h5 class="card-title text-dark mt-3">Eric John R. Tan</h5>
+                  <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem repellendus unde veniam eius quia inventore amet dicta? Incidunt, cumque.</p>
+                  <i class="fab fa-twitter"></i>&nbsp;
+                  <i class="fab fa-facebook-f"></i>&nbsp;
+                  <i class="fab fa-instagram"></i>&nbsp;
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-center mb-3 bg-light" style="height: 100%;">
+                <div class="card-body">
+                  <img src="/images/test.webp" class="w-50 rounded-circle" alt="">
+                  <h5 class="card-title text-dark mt-3">Eric John R. Tan</h5>
+                  <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem repellendus unde veniam eius quia inventore amet dicta? Incidunt, cumque.</p>
+                  <i class="fab fa-twitter"></i>&nbsp;
+                  <i class="fab fa-facebook-f"></i>&nbsp;
+                  <i class="fab fa-instagram"></i>&nbsp;
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-center mb-3 bg-light" style="height: 100%;">
+                <div class="card-body">
+                  <img src="/images/test.webp" class="w-50 rounded-circle" alt="">
+                  <h5 class="card-title text-dark mt-3">Eric John R. Tan</h5>
+                  <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem repellendus unde veniam eius quia inventore amet dicta? Incidunt, cumque.</p>
+                  <i class="fab fa-twitter"></i>&nbsp;
+                  <i class="fab fa-facebook-f"></i>&nbsp;
+                  <i class="fab fa-instagram"></i>&nbsp;
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <div class="card text-center mb-3 bg-light" style="height: 100%;">
+                <div class="card-body">
+                  <img src="/images/test.webp" class="w-50 rounded-circle" alt="">
+                  <h5 class="card-title text-dark mt-3">Eric John R. Tan</h5>
+                  <p class="card-text text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas voluptatem repellendus unde veniam eius quia inventore amet dicta? Incidunt, cumque.</p>
+                  <i class="fab fa-twitter"></i>&nbsp;
+                  <i class="fab fa-facebook-f"></i>&nbsp;
+                  <i class="fab fa-instagram"></i>&nbsp;
+                  <i class="fab fa-linkedin-in"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+      <!--FOOTER-->
       
-
+      <section class="mybg">
+        <div class="container">
+          <div class="row pt-5 pb-5">
+              <p class="text-white text-center">Copyright © 2023</p>
+          </div>
+        </div>
+      </section>
+      
+      
        
 
 
