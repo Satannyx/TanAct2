@@ -47,10 +47,7 @@ w<!doctype html>
   }
   }
   </style>
-  <script>
-
-  </script>
-
+ 
   <body>
 
     <!--NAVBAR-->
@@ -87,7 +84,7 @@ w<!doctype html>
               <p class="lead my-4">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit doloribus iusto commodi corrupti praesentium repellat eius, atque, quod nihil tempore inventore tempora error, assumenda numquam consectetur. Optio quae voluptates sunt!
               </p>
-              <button class="btn btn-light btn-lg fw-bold" data-bs-toggle="model" data-bs-target="#Connect">Connect With Us!</button>
+              <button class="btn btn-light btn-lg fw-bold" data-bs-toggle="modal" data-bs-target="#Connect">Connect With Us!</button>
             </div>
             <img src="/images/img1.png" alt="" class="w-50 d-none d-sm-block hide-on-sm">
           </div>
@@ -298,7 +295,26 @@ w<!doctype html>
       </div>
     </section>
     
-      
+      <!--MODAL-->
+
+      <div class="modal fade" id="Connect" tabindex="-1" aria-labelledby="ConnectModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="ConnectModalLabel">Connect Modal</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <!-- Add your modal content here -->
+              <p>Modal content goes here...</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <!-- Add additional buttons if needed -->
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!--FOOTER-->
       
