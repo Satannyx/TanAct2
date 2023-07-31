@@ -55,7 +55,6 @@ function validateForm() {
 
   // Check if confirm password matches the original password
   if (password !== confirmPassword) {
-    alert("Confirm password does not match the original password.");
     document.getElementById("password").classList.add("is-invalid");
     document.getElementById("confirmPassword").classList.add("is-invalid");
     document.getElementById("passwordMismatchMessage").classList.remove("d-none");
