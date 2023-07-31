@@ -67,6 +67,7 @@
         margin-bottom: 1.5rem;
       }
     }
+
   </style>
 
   <body>
@@ -559,6 +560,19 @@
                     required
                   />
                   <small class="form-text text-muted"></small>
+                </div>
+                <div class="mb-3">
+                  <label for="confirmPassword" class="form-label">Confirm Password</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    required
+                  />
+                  <small id="passwordMismatchMessage" class="form-text text-danger d-none">
+                    Passwords do not match.
+                  </small>
                 </div>
               </form>
             </div>

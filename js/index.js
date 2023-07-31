@@ -47,7 +47,25 @@ function validateForm() {
   // Check password requirements using a regular expression
   var passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
   if (!password.match(passwordRegex)) {
-    alert("Password must be at least 8 characters long and contain at least one uppercase letter, one lowercase letter, one number, and one special character.");
+    alert("Password must be at least 8 characters long and contain at least one letter (uppercase or lowercase), one number, and one special character.");
+    return false;
+  }
+  
+  var confirmPassword = document.getElementById("confirmPassword").value;
+
+  // Check if confirm password matches the original password
+  if (password !== confirmPassword) {
+    alert("Confirm password does not match the original password.");
+    document.getElementById("password").classList.add("is-invalid");
+    document.getElementById("confirmPassword").classList.add("is-invalid");
+    document.getElementById("passwordMismatchMessage").classList.remove("d-none");
+    return false;
+  }
+
+  // Check if the email is valid using a regular expression
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!email.match(emailRegex)) {
+    alert("Please enter a valid email address.");
     return false;
   }
 
@@ -70,11 +88,12 @@ function handleSubmit(event) {
   }
 }
 
+document.getElementById("registrationForm").addEventListener("submit", handleSubmit);
 document.getElementById("submitBtn").addEventListener("click", handleSubmit);
+
 
 // Reset the form control borders when the input fields change
 var inputElements = document.querySelectorAll("#registrationForm input");
 inputElements.forEach(function (element) {
   element.addEventListener("input", resetFormControls);
 });
-
